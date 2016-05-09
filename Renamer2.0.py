@@ -1,11 +1,13 @@
 __author__ = 'Karsten'
 
 import os
+from sys import argv
 import mutagen
 from mutagen.id3 import ID3
 import re
 
-path = 'E:\Musik\Alestorm'
+#Path to folder that contains the mp3 data
+path = argv[1]
 
 for (path, dirs, files) in os.walk(path, topdown=False):
 
